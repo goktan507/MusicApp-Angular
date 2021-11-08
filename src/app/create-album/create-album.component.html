@@ -1,0 +1,26 @@
+<form [formGroup]="appForm" (ngSubmit)="onSubmit(appForm.value)" style="width: 30%;margin-left:30%" >
+    <div class="form-group">
+        <input type="text" class="form-control" formControlName="title" placeholder="Title" required>
+      </div><br/>
+    
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="artist" placeholder="Artist" required>
+      </div><br/>
+    
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="description" placeholder="Description" required>
+      </div><br/>
+    
+      <div class="form-group">
+        <input type="number" class="form-control" formControlName="year" placeholder="2021" required>
+      </div><br/>
+    
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="image" placeholder="[1-13].png" required>
+      </div><br/>
+
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>  
+</form>
+
